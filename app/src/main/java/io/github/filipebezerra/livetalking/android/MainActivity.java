@@ -1,6 +1,5 @@
 package io.github.filipebezerra.livetalking.android;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -13,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
 import com.codebutler.android_websockets.WebSocketClient;
 
 import org.json.JSONException;
@@ -36,7 +36,7 @@ import io.github.filipebezerra.livetalking.android.util.WsConfig;
  * @version 0.0.1
  * @since 24/11/2014
  */
-public class MainActivity extends Activity {
+public class MainActivity extends SherlockActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 

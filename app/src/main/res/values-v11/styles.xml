@@ -1,6 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <style name="ChatAppTheme" parent="Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
         <item name="actionBarStyle">@style/MyActionBarTheme</item>
     </style>
 
@@ -8,6 +10,7 @@
         <item name="background">@color/actionbar</item>
         <item name="android:background">@color/actionbar</item>
 
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
         <item name="titleTextStyle">@style/TitleTextStyle</item>
     </style>
 

@@ -1,6 +1,5 @@
 package io.github.filipebezerra.livetalking.android;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.util.Linkify;
@@ -10,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
+
 /**
  *
  *
@@ -17,7 +18,7 @@ import android.widget.Toast;
  * @version 0.0.1
  * @since 24/11/2014
  */
-public class NameActivity extends Activity {
+public class NameActivity extends SherlockActivity {
 
     private Button btnJoin;
     private EditText txtName;
@@ -34,7 +35,7 @@ public class NameActivity extends Activity {
         Linkify.addLinks(txtAuthorUrl, Linkify.ALL);
 
         // Hiding the action bar
-        getActionBar().hide();
+        getSupportActionBar().hide();
 
         btnJoin.setOnClickListener(new View.OnClickListener() {
 
