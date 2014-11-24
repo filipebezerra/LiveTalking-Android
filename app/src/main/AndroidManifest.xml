@@ -1,9 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.filipebezerra.livetalking.android">
+    package="io.github.filipebezerra.livetalking.android" >
 
-    <application android:allowBackup="true" android:label="@string/app_name"
-        android:icon="@drawable/ic_launcher" android:theme="@style/AppTheme">
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ChatAppTheme" >
+
+        <activity
+            android:name="io.github.filipebezerra.livetalking.android.NameActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.github.filipebezerra.livetalking.android.MainActivity"
+            android:label="@string/title_activity_main"
+            android:icon="@drawable/ic_chat">
+        </activity>
     </application>
 
 </manifest>

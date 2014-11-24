@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LiveTalking-Android</string>
+
+    <string name="app_name">Live Talking</string>
+    <string name="title">@string/app_name</string>
+    <string name="author_name">By Filipe Bezerra</string>
+    <string name="author_url">http://filipebezerra.github.io/</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="btn_join">JOIN</string>
+    <string name="btn_send">Send</string>
+    <string name="title_activity_main">@string/app_name</string>
+
 </resources>
